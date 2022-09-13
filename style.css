@@ -1,3 +1,297 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'),
+    url('../fonts/poppins-v20-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+    url('../fonts/poppins-v20-latin-500.woff2') format('woff2'),
+    url('../fonts/poppins-v20-latin-500.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+    url('../fonts/poppins-v20-latin-600.woff2') format('woff2'),
+    url('../fonts/poppins-v20-latin-600.woff') format('woff');
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #00040f;
+}
+
+.nav-links {
+  font-size: 16px;
+  line-height: 130%;
+}
+
+@media only screen and (max-width: 767px) {
+  .nav-links {
+    font-size: 28px;
+    line-height: 120%;
+  }
+}
+
+
+.tg-btn {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  width: 50px;
+  cursor: pointer;
+}
+
+.spn1 {
+  display: block;
+  width: 100%;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  height: 8px;
+  background: #fff;
+  transition: all .3s;
+  position: relative;
+}
+
+.spn2 {
+  display: block;
+  width: 100%;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  height: 8px;
+  background: #fff;
+  transition: all .3s;
+  position: relative;
+}
+
+.spn3 {
+  display: block;
+  width: 100%;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  height: 8px;
+  background: #fff;
+  transition: all .3s;
+  position: relative;
+}
+
+.spn2 {
+  margin-top: 7px;
+}
+
+.spn3 {
+  margin-top: 7px;
+}
+
+.animat .spn1 {
+  animation: ease .7s top forwards;
+}
+
+.not-animat .spn1 {
+  animation: ease .7s top-2 forwards;
+}
+
+.animat .spn2 {
+  animation: ease .7s scaled forwards;
+}
+
+.not-animat .spn2 {
+  animation: ease .7s scaled-2 forwards;
+}
+
+.animat .spn3 {
+  animation: ease .7s bottom forwards;
+}
+
+.not-animat .spn3 {
+  animation: ease .7s bottom-2 forwards;
+}
+
+@keyframes top {
+  0% {
+    top: 0;
+    transform: rotate(0);
+  }
+
+  50% {
+    top: 15px;
+    transform: rotate(0);
+  }
+
+  100% {
+    top: 15px;
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes top-2 {
+  0% {
+    top: 15px;
+    transform: rotate(45deg);
+  }
+
+  50% {
+    top: 15px;
+    transform: rotate(0deg);
+  }
+
+  100% {
+    top: 0;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes bottom {
+  0% {
+    bottom: 0;
+    transform: rotate(0);
+  }
+
+  50% {
+    bottom: 15px;
+    transform: rotate(0);
+  }
+
+  100% {
+    bottom: 15px;
+    transform: rotate(135deg);
+  }
+}
+
+@keyframes bottom-2 {
+  0% {
+    bottom: 15px;
+    transform: rotate(135deg);
+  }
+
+  50% {
+    bottom: 15px;
+    transform: rotate(0);
+  }
+
+  100% {
+    bottom: 0;
+    transform: rotate(0);
+  }
+}
+
+@keyframes scaled {
+  50% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes scaled-2 {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.s1-top {
+  width: 100%;
+  max-width: 670px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .s1 {
+    background-position: calc(50%) calc(0% - 118px);
+  }
+  .s1-top {
+    max-width: fit-content;
+    padding-top: 800px;
+  }
+}
+
+.s1-top-word {
+  background-color: #17161f;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.hero-title {
+  font-size: 72px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+}
+
+@media only screen and (max-width: 750px) {
+  .hero-title {
+    font-size: 60px;
+  }
+}
+
+.hero-title-word {
+  background-image: radial-gradient(64.18% 64.18% at 71.16% 35.69%, #DEF9FA 0.89%, #BEF3F5 17.23%, #9DEDF0 42.04%, #7DE7EB 55.12%, #5CE1E6 71.54%, #33BBCF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.s1-top-text-box {
+  max-width: 483px;
+}
+
+.s1-top-text {
+  font-size: 18px;
+  line-height: 170%;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 750px) {
+  .s1-top {
+    padding-top: 600px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .s1 {
+    background-position: calc(50%) calc(5% - 118px);
+  }
+  .s1-top {
+    padding-top: 400px;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+  .s1-top-word {
+    font-size: 9px;
+  }
+  
+  .hero-title {
+    font-size: 50px;
+    line-height: 130%;
+  }
+}

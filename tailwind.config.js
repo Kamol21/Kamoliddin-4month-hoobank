@@ -4,12 +4,19 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        sm: '600px',
-        md: '790px',
-        lg: '992px',
-        xl: '1200px',
-        '2xl': '1440px',
+        xl: '1210px',
+        '2xl': '1210px',
       },
+      fontFamily: {
+        poppins: ['Poppins', 'Arial', 'sans-serif'],
+      },
+      backgroundImage: {
+        heroBg: "url('../images/hero-bg.svg')",
+        'landing-bg': "url('../images/landing-page.jpg')"
+      },
+      backgroundPosition: {
+        introBgPosition: 'calc(50% + 314px) calc(50% - 181px)',
+      }
     },
   },
   plugins: [],

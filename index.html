@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,71 +8,73 @@
   <title>tailwind-hoobank</title>
   <link rel="stylesheet" href="./css/main.css">
 </head>
-<body class="bg-orange-400">
-  <div class="container bg-green-500 px-2 mx-auto">
-    <h1>hallo</h1>
-    <ul class="flex flex-wrap">
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-      <li>hallo</li>
-    </ul>
-  </div>
+
+<body class="font-poppins flex flex-col h-full bg-landing-bg bg-cover bg-no-repeat">
+  <header class="py-6">
+    <div class="2xl:container px-5 mx-auto flex justify-between md:items-center relative">
+      <a href="index.html">
+        <img src="./images/logo.svg" width="120" height="32" alt="hoobank sites logo">
+      </a>
+      <nav class="bg-black p-5 md:p-0 md:bg-transparent hidden md:block absolute top-10 right-6 md:static z-10 rounded">
+        <ul class="list-none md:space-x-14 space-y-3 md:space-y-0 flex flex-col md:flex-row">
+          <li>
+            <a class="nav-links text-white" href="index.html">
+              Home
+            </a>
+          </li>
+          <li>
+            <a class="nav-links text-white  opacity-70" href="#">
+              About Us
+            </a>
+          </li>
+          <li>
+            <a class="nav-links text-white  opacity-70" href="#">
+              Features
+            </a>
+          </li>
+          <li>
+            <a class="nav-links text-white  opacity-70" href="#">
+              Solution
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button class="tg-btn md:hidden not-animat" type="menu">
+        <span class="spn1"></span>
+        <span class="spn2"></span>
+        <span class="spn3"></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="grow">
+    <section class="s1 pt-8 pb-24 bg-heroBg bg-introBgPosition bg-contain sm:bg-inherit bg-no-repeat">
+      <div class="2xl:container px-5 mx-auto flex items-center">
+        <div class="s1-top pb-40 pt-32 mx-auto lg:mx-0">
+          <strong
+            class="s1-top-word text-white mb-3 text-opacity-50 inline-flex items-center py-1 px-3 rounded-xl before:w-7 before:h-7 before:mr-2 before:content-[url('../images/Discount.svg')]">
+            <span class="text-white mr-1">20% </span> DISCOUNT FOR <span class="text-white mx-1"> 1 MONTH </span>
+            ACCOUNT
+          </strong>
+          <h1 class="hero-title text-white font-semibold mb-10">The Next
+            <span class="hero-title-word">Generation</span>
+            Payment Method.
+          </h1>
+          <div class="s1-top-text-box">
+            <p class="s1-top-text font-normal text-white text-opacity-70">
+              Our team of experts uses a methodology to identify the credit cards most likely to fit your needs. <br> We examine annual percentage rates, annual fees.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+  <script src="./js/main.js"></script>
+
 </body>
+
 </html>
